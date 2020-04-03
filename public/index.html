@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>send mail</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="panel form">
+        <div class="panel-heading">
+          <h3 class="text-center">send email</h3>
+        </div>
+        <div class="panel-body" style="padding: 20px;box-sizing:border-box;border:0.1px solid green">
+          <form action="/sendemail" method="POST">
+            <div class="form-group">
+              <label for="adress">Email:</label>
+              <input type="email" class="form-control" id="address" placeholder="Enter email" name="address">
+            </div>
+            <div class="form-group">
+              <label for="subject">subject:</label>
+              <input type="text" class="form-control" id="subject" placeholder="Enter subject" name="subject">
+            </div>
+            <div class="form-group">
+                <label for="textt">text:</label>
+                <input type="text" class="form-control" id="textt" placeholder="Enter subject" name="textt">
+              </div>
+              <div class="form-group">
+                <label for="htmltext">html:</label>
+                <textarea rows="5" class="form-control" id="htmltext" placeholder="Enter html" name="htmltext"></textarea>
+              </div>
+            <div class="form-group">
+                <label for="email_body">body:</label>
+                <textarea rows="4"  class="form-control" id="email_body" placeholder="compose yoour email" name="email_body"></textarea>
+              </div>
+            
+            <button type="submit" class="btn btn-primary">Send Email</button>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+    <div class="col-sm-6"></div>
+  </div>
+</div>
+
+</body>
+</html>
